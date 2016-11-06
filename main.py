@@ -12,6 +12,11 @@ def hello():
     return 'Hello World!'
 
 
+@app.route('/dog')
+def about():
+    return "Woof!"
+
+
 @app.errorhandler(404)
 def page_not_found(e):
     """Return a custom 404 error."""
