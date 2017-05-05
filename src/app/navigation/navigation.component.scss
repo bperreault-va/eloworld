@@ -1,0 +1,26 @@
+.nav-canvas {
+  height: 100%;
+
+  color: lightgray;
+  transition: color 0.5s, width 0.5s;
+  &:hover {
+    color: black;
+    .nav-items {
+      border-right-color: black;
+    }
+  }
+
+  .nav-items {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    transition: align-items 0.5s;
+    height: 100%;
+    padding-right: 5px;
+    border-right: 1px solid lightgrey;
+
+    a {
+      text-decoration: none;
+    }
+  }
+}

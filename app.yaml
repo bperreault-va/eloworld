@@ -3,6 +3,9 @@ threadsafe: yes
 
 handlers:
 
+- url: /_ajax/.+
+  script: main.app
+
 - url: /(.+)
   static_files: dist/\1
   upload: dist/(.*)
